@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+#home_icon {
+    font-size: 30px;
+    margin-right: auto;
+}
+
+#navbar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    background: white;
+    position: absolute;
+    top: 15%;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.navbar_spans {
+    margin: 0px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar_spans:hover {
+    text-decoration: underline;
+}
+
+#background_container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#background_image {
+    height: 100%;
+}
+
+#lower_body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add this line */
+    z-index: 2; /* Add this line */
+}
+
+#waves {
+    position: absolute; /* Change from relative to absolute */
+    width: 100%;
+    bottom: 0;
+    left: 0; /* Add this line */
+    z-index: -1; /* Add this line */
+}
+#lower_body_center {
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0px 5px 20px 4px rgba(174, 174, 164, 0.3);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2));
+    padding-bottom: 40px;
+}
+
+#lower_body_text_cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card_title {
+    opacity: 0.7;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card_text {
+    height: 60%;
+    opacity: 0.7;
+}
+
+.card_button {
+    border: none;
+    border-radius: 5px;
+    background: rgb(227, 225, 223);
+    cursor: pointer;
+    margin-top: 15px;
+    width: 80px;
+    height: 35px;
+}
+
+#lower_body_image_cards {
+    margin-top: 100px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.image_container {
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.image_content {
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+
+.images {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.browse_text {
+    background-color: white;
+    opacity: 0.5;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
